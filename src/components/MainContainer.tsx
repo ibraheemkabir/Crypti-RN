@@ -25,10 +25,13 @@ class Crypti extends Component<fetchProps> {
 				percent_change_7d={coin.percent_change_7d}
 				price_usd={coin.price_usd}
 				price_btc={coin.price_btc}
+				nav={this.props.nav}
 			/>)
 	}
 
 	render() {
+		console.log(this.props.nav);
+
 		if (this.props.crypto.isFetching) {
 			return (
 				<View>
@@ -50,7 +53,7 @@ class Crypti extends Component<fetchProps> {
 							this.renderCoinCards()
 							: <View>
 								<Text >Error Loading Data.. Check network Connection</Text>
-								</View>
+							</View>
 					}
 				</ScrollView >
 			</View>

@@ -5,11 +5,12 @@ export interface fetchProps {
 		data: [],
 		fetch: boolean
 	}
+	nav: any
 }
 
-export interface cryptoProps{
-	name: string, 
-	symbol: string, 
+export interface cryptoProps {
+	name: string,
+	symbol: string,
 	percent_change_24h: string,
 	percent_change_7d: string,
 	percent_change_1h: string,
